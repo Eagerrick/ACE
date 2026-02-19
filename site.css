@@ -176,7 +176,7 @@ footer {
 .hero {
     position: relative;
     height: 80vh; /* takes most of screen */
-    background: url("header.jpeg") center/cover no-repeat;
+    background: url("images/header.jpeg") center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
