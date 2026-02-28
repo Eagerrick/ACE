@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Air-Land Drone Charging Station</title>
+    <title>Contact - Air&Land Autonomous Charging Environment</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"
+    />
+
+    <!-- Your site CSS -->
     <link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body id="top">
 
+<!-- NAVIGATION -->
 <nav>
     <div class="logo">
-    <a href="index.html">
-        <img src="images/logo.jpeg" alt="Air-Land Drone Charging Station Logo">
-    </a>
+        <a href="index.html">
+            <img src="images/logo2.jpeg" alt="Air&Land Autonomous Charging Environment Logo">
+        </a>
     </div>
     <ul>
         <li><a href="project.html">Project</a></li>
@@ -22,14 +31,39 @@
     </ul>
 </nav>
 
-<section>
-    <h2>Contact Us</h2>
-    <p>If you have any questions or want to collaborate, feel free to reach out!</p>
-    <p>Email: <a href="mailto:smartcampus@college.edu">smartcampus@college.edu</a></p>
-    <p>Phone: +1 (555) 123-4567</p>
-</section>
+<!-- MAIN CONTENT -->
+<main class="contact-page">
+
+    <!-- CONTACT INFO -->
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+        <ul>
+            <li>Francisco Gonçalves – <a href="mailto:francisco.j.goncalves@tecnico.ulisboa.pt">francisco.j.goncalves@tecnico.ulisboa.pt</a></li>
+            <li>Rodrigo Oliveira – <a href="mailto:rodrigo.cunha.oliveira@tecnico.ulisboa.pt">rodrigo.cunha.oliveira@tecnico.ulisboa.pt</a></li>
+            <li>Sara Viegas – <a href="mailto:saramsviegas@gmail.com">saramsviegas@gmail.com</a></li>
+            <li>Ricardo Maurício – <a href="mailto:ricardo.esteves.mauricio@tecnico.ulisboa.pt">ricardo.esteves.mauricio@tecnico.ulisboa.pt</a></li>
+            <li>Pedro Nantes – <a href="mailto:pedro.moreira.nantes@tecnico.ulisboa.pt">pedro.moreira.nantes@tecnico.ulisboa.pt</a></li>
+            <li>Lena Wang – <a href="mailto:lena.wang@tecnico.ulisboa.pt">lena.wang@tecnico.ulisboa.pt</a></li>
+        </ul>
+    </section>
+
+    <!-- LOCATION / MAP -->
+    <section class="location">
+        <h2>Where we are</h2>
+        <div id="map" class="map-container"></div>
+    </section>
+
+</main>
+
+<!-- BACK TO TOP BUTTON -->
 <button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
 
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Your JS: back-to-top + map -->
 <script src="script.js"></script>
+
 </body>
 </html>

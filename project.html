@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Air-Land Drone Charging Station</title>
+    <title>Project - Air&Land Autonomous Charging Environment</title>
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
 
 <nav>
     <div class="logo">
-    <a href="index.html">
-        <img src="images/logo.jpeg" alt="Air-Land Drone Charging Station Logo">
-    </a>
+        <a href="index.html">
+            <img src="images/logo2.jpeg" alt="Air&Land Autonomous Charging Environment Logo">
+        </a>
     </div>
+
     <ul>
         <li><a href="project.html">Project</a></li>
         <li><a href="team.html">Team</a></li>
@@ -22,20 +23,96 @@
     </ul>
 </nav>
 
-<section>
-    <h2>Project Details</h2>
-    <p>
-        Our project automates key campus operations including attendance tracking, classroom scheduling, and energy management.
-    </p>
-    <ul>
-        <li>RFID-based attendance system</li>
-        <li>Smart classroom occupancy sensors</li>
-        <li>Mobile app for notifications</li>
-        <li>Data-driven energy optimization</li>
-    </ul>
-</section>
-<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
+<header class="hero hero--small"></header>
 
+<main>
+
+    <!-- Section 1: Challenge -->
+    <section class="project-section">
+        <div class="project-row">
+            <div class="project-text">
+                <h2>Our problem</h2>
+                <p>
+                    Autonomous drones are becoming an integral part of modern operations across industries ranging from logistics 
+                    and agriculture to surveillance and emergency response. As these systems are deployed in increasingly complex and 
+                    high-risk environments, new challenges emerge that demand careful planning and coordination. Drones operating in 
+                    swarms or over large areas face critical limitations, particularly regarding energy management. 
+                    In prolonged or indefinite-duration missions, such as monitoring industrial sites, inspecting infrastructure, or 
+                    observing natural disasters, the inability of drones to autonomously recharge leads to operational downtime, 
+                    reduced efficiency, and potential mission failure. Furthermore, coordinating multiple drones introduces logistical 
+                    challenges: drones must avoid conflicts, prioritize charging needs based on battery levels and task urgency, and 
+                    optimize their flight paths to maintain uninterrupted coverage of the area of interest. Without an intelligent 
+                    system to manage these factors, the potential of drone swarms is severely constrained, and human operators are 
+                    burdened with complex supervisory tasks that could be automated.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="images/tung.jpeg" alt="Drone swarm illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Solution -->
+    <section class="project-section">
+        <div class="project-row">
+            <div class="project-image">
+                <img src="images/tung.jpeg" alt="Charging station illustration">
+            </div>
+            <div class="project-text">
+                <h2>Our Solution</h2>
+                <p>
+                    The Air&Land Autonomous Charging Environment is designed to solve these challenges by creating a fully coordinated ecosystem 
+                    where drones and charging stations communicate in real time. Our system integrates autonomous navigation, 
+                    intelligent charging scheduling, and inter-drone coordination to ensure continuous operation of drone swarms. 
+                    Each drone can autonomously identify when it needs to recharge, locate the nearest available charging station, 
+                    and navigate there without human intervention. Charging stations are connected to a central command system that 
+                    monitors drone energy levels, traffic, and mission priorities, enabling adaptive scheduling that optimizes overall 
+                    swarm performance. The system is modular and scalable, allowing integration with unmanned ground vehicles or other 
+                    autonomous assets for extended missions. By modifying commercial drones with custom software for autonomous landing 
+                    and communications, we create a prototype that demonstrates practical and efficient management of multi-drone 
+                    operations in real-world conditions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="project-row">
+            <div class="project-text">
+                <h2>The Market</h2>
+                <p>
+                    Companies and organizations operating drone fleets stand to gain significant benefits from adopting the 
+                    Air&Land Autonomous Charging Environment. By automating charging and coordination, businesses can reduce operational 
+                    downtime, increase mission efficiency, and maximize the utilization of their assets. Continuous drone operation 
+                    enables faster data collection, more consistent monitoring, and the ability to maintain critical services without 
+                    interruptions. The intelligent system reduces the need for constant human supervision, lowering labor costs and 
+                    minimizing human error. Moreover, the scalable and adaptable design allows companies to deploy it across various 
+                    mission types, from infrastructure inspection and environmental monitoring to logistics and security applications. 
+                    Ultimately, investing in such a system provides a competitive advantage by enabling reliable, autonomous operations 
+                    that save time, reduce costs, and improve operational safety across a wide range of industries.
+                </p>
+            </div>
+            <div class="project-image">
+                <img src="images/tung.jpeg" alt="Charging station illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional: Key Features Section -->
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Continuous drone operation with minimal downtime</li>
+            <li>Intelligent charging coordination for swarm efficiency</li>
+            <li>Real-time monitoring dashboard</li>
+            <li>Scalable and modular system design</li>
+        </ul>
+    </section>
+
+</main>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
 <script src="script.js"></script>
+
 </body>
 </html>
