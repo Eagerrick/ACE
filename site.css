@@ -559,6 +559,93 @@ footer {
     }
 }
 
+.blog-post {
+    max-width: 900px;
+    margin: 90px auto 40px;
+    padding: 0 16px;
+}
+
+.blog-post-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e2e5f0;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.blog-hero-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-content {
+    padding: 22px 24px;
+}
+
+.blog-content h1 {
+    margin: 0 0 14px;
+    font-size: 2rem;
+    color: #0b173f;
+}
+
+.blog-content p {
+    margin-bottom: 14px;
+    color: #2f3858;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.blog-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f7ff;
+    border-top: 1px solid #e6e9f5;
+    padding: 12px 24px;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #334169;
+}
+
+.post-date {
+    font-weight: 700;
+}
+
+.share-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.share-options a {
+    color: #0a51d6;
+    text-decoration: none;
+    border: 1px solid #c9d1f0;
+    border-radius: 999px;
+    padding: 4px 10px;
+    background: #fff;
+    transition: background 160ms ease, color 160ms ease;
+}
+
+.share-options a:hover {
+    background: #0a51d6;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .blog-hero-image img {
+        height: 260px;
+    }
+
+    .blog-content h1 {
+        font-size: 1.6rem;
+    }
+}
+
 /* =========================
    BLOG PREVIEW CARDS
    Display two rectangular post cards side-by-side
@@ -1104,3 +1191,50 @@ footer {
     }
 }
 
+#intro {
+    position: fixed;
+    inset: 0;
+    background: #0b2540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease;
+}
+
+#introLogo {
+    width: 140px;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* entrada */
+#intro.show #introLogo {
+    animation: introIn 1s ease forwards;
+}
+
+/* movimento para navbar */
+#intro.move #introLogo {
+    animation: moveToCorner 1s ease forwards;
+}
+
+/* fade out final */
+#intro.hide {
+    opacity: 0;
+}
+
+@keyframes introIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes moveToCorner {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+    100% {
+        transform: scale(0.4) translate(-300px, -200px);
+    }
+}

@@ -61,3 +61,39 @@
         .bindPopup("Instituto Superior Técnico")
         .openPopup();
 })();
+
+// ================= INTRO LOGO (ADVANCED) =================
+(function () {
+    const intro = document.getElementById("intro");
+    const logo = document.getElementById("introLogo");
+
+    if (!intro || !logo) return;
+
+    // mostrar só uma vez
+    if (sessionStorage.getItem("introShown")) {
+        intro.style.display = "none";
+        return;
+    }
+
+    sessionStorage.setItem("introShown", "true");
+
+    window.addEventListener("load", () => {
+        // fase 1: aparecer
+        intro.classList.add("show");
+
+        // fase 2: mover para navbar
+        setTimeout(() => {
+            intro.classList.add("move");
+        }, 1000);
+
+        // fase 3: desaparecer
+        setTimeout(() => {
+            intro.classList.add("hide");
+        }, 2000);
+
+        // remover completamente
+        setTimeout(() => {
+            intro.style.display = "none";
+        }, 2600);
+    });
+})();
