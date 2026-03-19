@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Air&Land Autonomous Charging Environment</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+    <a href="index.html">
+        <img src="images/logo2.jpeg" alt="Air&Land Autonomous Charging Environment Logo">
+    </a>
+    </div>
+    <ul>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero hero--small"></header>
+
+<div>
+    <h1>Ata da entrevista com comandante do corpo de bombeiros de Caxarias - 12/03/2026</h1>
+
+<h3>A Atuação de Dispositivos Autónomos na Visão da Patente de comando.</h3>
+
+<p>Por: Francisco J. Gonçalves / Air&Land Autonomous Charging Environment</p>
+
+<p>
+Para uma boa idealização do projeto, deveremos ter sempre em conta a perspetiva de quem lida com os mesmos na linha da frente. 
+Para validar a nossa solução, conversámos com o Comandante de Setor Tiago Rodrigues da Silva. O nosso objetivo foi claro: entender onde começa e acaba a autonomia robótica do nosso projeto e onde lidera a decisão humana num teatro de operações comum.
+</p>
+
+<h3>1 - O princípio norte do nosso projeto</h3>
+
+<p>
+A primeira lição foi sobre o lugar da tecnologia no teatro de operações do quartel. 
+A resposta foi clara e simples: os meios tecnológicos não devem ambicionar ocupar o lugar do bombeiro e saber reproduzir todas as suas operações. 
+Antes, deverão servir para assegurar a vida, otimizar as operações e contribuir positivamente da melhor forma possível em todas as ações do quartel.
+</p>
+
+<p>
+"...porém estes costumam ser bastante úteis quando utilizados em contextos específicos que fazem sentido. 
+Porém, um drone não substitui capital humano aplicado."
+</p>
+
+<p>
+Ou seja, será melhor apostar na habilitação de tarefas já realizadas e apostar na sua robustez.
+</p>
+
+<p>Como:</p>
+
+<p>- Vigilância em possíveis focos de acendimento;</p>
+<p>- Busca em perímetros críticos ou áreas muito extensas definidos;</p>
+
+<p>
+Esta visão reforça a nossa aposta no desenvolvimento de firmware dedicado para a operação em cenários semelhantes. 
+Ao desenvolver um ambiente onde os agentes autónomos possam circular, estes conseguirão assumir tarefas e concretizá-las de forma coordenada, 
+sem o problema de falta de bateria.
+</p>
+
+<h3>2 - Limitações atuais e seus desafios</h3>
+
+<p>
+Apesar das suas vantagens, ainda existem grandes fatores que dificultam a aplicação destas tecnologias em cenários reais, como:
+</p>
+
+<p>- A autonomia limitada das baterias;</p>
+<p>- A segurança do espaço aéreo durante as operações de vários veículos;</p>
+
+<p>
+"A autonomia revela ser o fator mais limitativo. A sua interferência no espaço aéreo também revela ser uma limitação para a sua operação normal. 
+A autonomia deverá ser desenvolvida e os drones deverão ter, de alguma forma, de assegurar a integridade do espaço aéreo de outras aeronaves."
+</p>
+
+<p>
+Estes pontos indicam falhas consideráveis que apresentam pontos interessantes a serem desenvolvidos. 
+Um parâmetro em concreto que poderá solucionar estes problemas é a implementação de modos de menor consumo enquanto o drone não está em atividade (DEEP SLEEP), 
+assim como modular o sistema de patentes do drone para que, se necessário, obedeça de imediato à ordem de aterrar quando um veículo aéreo prioritário se aproxima.
+</p>
+
+<h3>3 - Autonomia dos agentes e Hierarquia de Comando</h3>
+
+<p>
+O Comandante explicou que a autonomia deve seguir as ordens do comando de forma similar a como um batalhão as segue:
+</p>
+
+<p>
+"Tudo isto, desde que as estações e os drones consigam deduzir de forma correta o procedimento subentendido a aplicar após uma ordem do comandante."
+</p>
+
+<p>
+Porém, se quisermos desenvolver uma ideia nestes contextos, teremos que tomar em atenção a tomada de ações de certo drone quando este transmite ordens 
+a outros drones subordinados à volta. Este nunca poderá, em circunstância alguma, gerar ordens contraditórias com as ordens do comando acima.
+</p>
+
+<p>
+Dessa forma, a aplicação das estações como nós de encaminhamento é vantajosa. Nesse sentido, a proposta de utilizar as estações de carregamento como 
+"relays" (repetidores) de informação foi validada como uma solução aplicável para manter o fluxo de dados mesmo quando a rede principal falha, 
+porém que nunca substitui uma clara indicação de comando para as unidades presentes.
+</p>
+
+<h3>4 - O Paradoxo do excesso de Informação</h3>
+
+<p>
+Um dos pontos mais interessantes da entrevista foi o impacto do excesso de dados. 
+No terreno, existem diversas fontes que apresentam indicadores para o mesmo contexto. 
+Porém, dado que estas podem se contradizer regularmente, existe um impacto negativo para a tomada de decisão, 
+pois estes dados não se apresentam suficientemente claros ou fidedignos.
+</p>
+
+<p>
+"Sim. Existe ao ponto de gerar incerteza em certas decisões. Quando é pedida informação, esta vem de várias fontes que, por vezes, 
+contradizem-se ou geram incerteza de como agir. (No caso dos Meteogramas, existem tantos que uma análise fidedigna não se mostra fácil)."
+</p>
+
+<p>
+Um dos nossos focos será então simplificar também a cadeia, interpretação e consequência desta modelação de agentes para o cenário real de operações. 
+O comando destes agentes deverá então ser simulado e testado de forma a que, quando um dos agentes apresenta informações, estas sejam claras 
+e não redundantes ou de difícil leitura.
+</p>
+
+<h3>O Veredito</h3>
+
+<p>
+Esta entrevista confirmou que o futuro do combate a incêndios e proteção civil passa por sistemas que sejam autónomos na operação, 
+mas subordinados na decisão. O feedback do Comandante de Setor será o pilar central da nossa próxima fase de prototipagem.
+</p>
+</div>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>
