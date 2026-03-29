@@ -182,8 +182,10 @@ footer {
 }
 
 .logo img {
-    height: 55px;   /* Adjust size */
+    height: 50px;   /* Adjust size */
     width: auto;
+    position: relative;
+    top: 3px;       /* Slightly align with text */
 }
 
 
